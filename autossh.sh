@@ -10,7 +10,7 @@ argsSize=$#
 option=$1
 name=$2
 server=$3
-addInfo="$2 $3 $4 $5 $6" 
+addInfo="$2 $3 $4 $5 $6 $7" 
 configFile=~/.ssh/ssh_passwd
 sshConfigPath=~/.ssh/
 
@@ -80,7 +80,7 @@ function addServerInfo(){
 	fi
 
 	#check argv
-	if [[ $argsSize < 6 ]]; then
+	if [[ $argsSize < 7 ]]; then
 		echo "Usage: <nickname> <server> <port> <username> <passwd> <-version>"
 		exit
 	fi
