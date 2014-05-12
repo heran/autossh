@@ -85,7 +85,7 @@ function addServerInfo(){
 		exit
 	fi
 
-	isHave=`grep $server $configFile | awk -F " " '{print $0}'`
+	isHave=`grep $name $configFile | awk -F " " '{print $0}'`
 
 	if [[ "$isHave"x != x ]]; then
 		echo -e "\033[32;1mServer $server is have\033[0m"
